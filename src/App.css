@@ -1,11 +1,52 @@
 .App {
+  align-items:center;
+  background: white;
+  display: grid;
+  height:100vh;
   text-align: center;
+  width:100vw;
 }
 
-.App-logo {
+h1 {
+  color: #153c30;
+
+}
+
+button {
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.5rem;
+}
+
+.Top-Rated {
+  background: #74C365;
+  /* color: white; */
+
+ }
+
+ .Note-Worthy {
+  background: #3EB489;
+  /* color: white; */
+
+ }
+
+ .All-Rankings {
+  background: #679267;
+  
+ }
+
+
+
+
+
+
+ .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
