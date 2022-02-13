@@ -1,18 +1,19 @@
-function Button({type, setType},{ratingsApi, setRatingsApi},
+function Button({type, onTypeChanged, label}
     // {topratingsApi, setTopratingsApi}
     ) {
     return (
         <button 
             className={type} 
             onClick={() => {
-                console.log('clicked');
-                setType(type)
-                setRatingsApi(ratingsApi)
+                console.log(' button clicked');
+                onTypeChanged(type)
+                // setType(type)
+                // setRatingsApi(ratingsApi)
                 // setTopratingsApi(topratingsApi)
                 ;
             }}
         >
-            {type}
+            {label}
         </button> 
         );  
     } ;

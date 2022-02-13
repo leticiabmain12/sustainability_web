@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 
 const IndividualBrand = (props) =>  {
     return (
-        <ul>
-            <li>Name: {props.name}</li>
-            <li>Rating: {props.rating}</li>
-            <li>Summary: {props.summary}</li>
-        </ul>
+            <div className="brand-content">
+                <div className="brand-name">Name: {props.name}</div>
+            <div  className="brand-rating">Rating: {props.rating}</div>
+        <div  className="brand-summary">Summary: {props.summary}</div></div>
+        
     );
 
 // IndividualBrand.propTypes = {

@@ -1,11 +1,11 @@
 .App {
   align-items:center;
-  background: white;
   display: grid;
-  height:100vh;
   text-align: center;
   width:100vw;
 }
+
+
 
 h1 {
   color: #153c30;
@@ -14,14 +14,17 @@ h1 {
 
 button {
   border: 1px solid black;
-  border-radius: 0.25rem;
+  border-radius: 12px;
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0.5rem;
+
 }
 
 .Top-Rated {
   background: #74C365;
+  
+
   /* color: white; */
 
  }
@@ -37,43 +40,58 @@ button {
   
  }
 
+.ratings-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
 
-
-
-
-
- .App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
 
+.brand {
+  /* display: flex;
+  flex-direction: column; */
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+  flex-basis: 250px;
+  margin: 10px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.brand-content {
+  background-color: aqua;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.brand-name {
+  margin: 20px 2px;
+  justify-self: center;
+  align-self: flex-end;
+  font-weight: bold;
+  /* margin-bottom: 20px; */
+  text-align: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.brand-rating {
+    margin-right: auto;
+    text-align: left;
 }
+
+
+.brand-summary {
+  align-self: flex-start;
+  margin-right: auto;
+  margin-top: 3px;
+  justify-self: stretch;
+  text-align: left;
+}
+
+
+
+.brand:nth-child(2n){
+  background-color: pink;
+  
+}
+

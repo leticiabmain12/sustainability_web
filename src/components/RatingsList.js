@@ -2,15 +2,15 @@ import IndividualBrand from './IndividualBrand.js';
 
 
 const RatingsList = (props) =>  {
-    
-    const brandComponents = props.brandData.map((brand) => {
+   
+    const brandComponents = props.brandData.map((brand, idx) => {
         return (
-        <li key={brand.nameData}>
+        <div className="brand" key={idx}>
             <IndividualBrand 
             name={brand.name} 
             rating={brand.rating} 
             summary={brand.summary}/>
-        </li>
+        </div>
         );
 
 
@@ -21,9 +21,9 @@ const RatingsList = (props) =>  {
 
     return (<article>  
         <h2>Brand Ratings:</h2>
-        <ul> 
+        <div className="ratings-list"> 
            {brandComponents}
-        </ul>
+        </div>
         </article>);
 }
 
