@@ -20,7 +20,7 @@ const RatingsList = (props) =>  {
    
 
     return (<article>  
-        <h2>Brand Ratings:</h2>
+        <h2></h2>
         <div className="ratings-list"> 
            {brandComponents}
         </div>

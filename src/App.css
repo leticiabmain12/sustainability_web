@@ -8,21 +8,35 @@
 
 
 h1 {
-  color: #153c30;
+  color: #0b211a;
+  font-size: xxx-large;
+  text-shadow: #0b211a;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
 
 }
 
 button {
   border: 1px solid black;
-  border-radius: 12px;
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0.5rem;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  
 
 }
 
+button:hover{
+  color:rgba(245, 245, 245, 0.571);
+}
+
+button:visited{
+  color:rgb(255, 127, 127)
+}
+
 .Top-Rated {
-  background: #74C365;
+  background: #7bc278;
   
 
   /* color: white; */
@@ -30,7 +44,7 @@ button {
  }
 
  .Note-Worthy {
-  background: #3EB489;
+  background: #6aaa68;
   /* color: white; */
 
  }
@@ -56,11 +70,18 @@ button {
   border-radius: 3px;
   flex-basis: 250px;
   margin: 10px;
+  background-color: rgb(208, 216, 210);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.brand:hover {
+  color:rgba(129, 162, 62, 0.77);
 
 }
 
 .brand-content {
-  background-color: aqua;
+  /* background-color: aqua; */
   display: flex;
   flex-direction: column;
 }
@@ -72,11 +93,14 @@ button {
   font-weight: bold;
   /* margin-bottom: 20px; */
   text-align: right;
+  font-family: cursive
 }
 
 .brand-rating {
     margin-right: auto;
     text-align: left;
+    text-decoration: underline;
+
 }
 
 
@@ -90,8 +114,11 @@ button {
 
 
 
-.brand:nth-child(2n){
-  background-color: pink;
-  
+.scroller{
+  width:1650px;
+  height: 1060px;
+  overflow-y: scroll;
+  scrollbar-width: thick;
+
 }
 

@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 const IndividualBrand = (props) =>  {
     return (
             <div className="brand-content">
-                <div className="brand-name">Name: {props.name}</div>
-            <div  className="brand-rating">Rating: {props.rating}</div>
-        <div  className="brand-summary">Summary: {props.summary}</div></div>
+                <div className="brand-name">{props.name}</div>
+            <div  className="brand-rating">{props.rating}</div>
+        <div  className="brand-summary">{props.summary}</div></div>
         
     );
 

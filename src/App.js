@@ -94,7 +94,7 @@ useEffect(()=> {
       
         />
        </div>
-       <main >
+       <main  class="scroller">
        {<RatingsList 
           brandData={ratingsApi}>
           </RatingsList>}
